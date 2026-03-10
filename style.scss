@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./header";
+@import "./nav";
+
+header {
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+    h1 {
+        font-size: 2.5rem;
+        i {
+            font-size: 3rem;
+        }
+    }
+}
+
+@mixin flexbox {
+    display: flex;
+}
+div.link{
+    @include flexbox;
+}

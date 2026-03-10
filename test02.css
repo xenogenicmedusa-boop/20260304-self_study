@@ -1,0 +1,11 @@
+h1{
+    color: rgb(59, 59, 221);
+}
+#maindiv{
+    font-size: 75%;
+    font-style: normal;
+}
+.poem{
+    font-style: italic;
+    font-size: 120%;
+}

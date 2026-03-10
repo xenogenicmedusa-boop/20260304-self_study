@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2.CSS-顏色與背景_背景圖片與透明度</title>
+    <style>
+        div {
+            font-size: 15pt;
+            text-align: center;
+            padding: 20px;
+            background-color: brown;
+        }
+        .opacity1 {opacity: 0.25;}
+        .opacity2 {opacity: 0.5;}
+        .opacity3 {opacity: 0.75;}
+        .opacity4 {opacity: 1.0;}
+        h1 {
+            color: aliceblue;
+            background-color: rebeccapurple;
+        }
+        #maindiv {
+            background-color: blanchedalmond;
+        }
+        .poem {
+            color: aquamarine;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body style="background-image: url(images/cat01.jpg);
+background-repeat: no-repeat;background-position: 50% 0%; background-size: contain;">
+<div id="maindiv">
+        <h1 class="poem">
+            床前明月光，疑是地上霜。<br>舉頭望明月，低頭思故鄉。
+        </h1>
+        <p>
+            月光鋪在床前的地上，<br>
+            像是一層瑩白的濃霜。<br>
+            抬頭晀望窗外的明月，<br>
+            低頭思念久別的故鄉。<br>
+        </p>
+    </div>
+    <div class="opacity1">透明度25%</div>
+    <div class="opacity2">透明度50%</div>
+    <div class="opacity3">透明度75%</div>
+    <div class="opacity4">透明度100%</div>
+    
+</body>
+</html>

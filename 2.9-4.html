@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.9.CSS-變形、轉換與動畫_動畫效果</title>
+    <style>
+        div{
+            margin: 0 auto;
+            padding: 20px;
+        }
+        @keyframes myanimation01{
+            from {background-color: yellow;}
+            to {background-color: red;}
+        }
+        @keyframes myanimation02{
+            from {left: 10px;}
+            to {left: 300px;}
+        }
+        @keyframes myanimation03{
+            0% {background: red; left: 10px; top: 10px;}
+            25% {background: yellow; left: 310px; top: 10px;}
+            50% {background: blue; left: 310px; top: 210px;}
+            75% {background: green; left: 10px; top: 210px;}
+            100% {background: rebeccapurple; left: 10px; top: 10px;}
+        }
+        .box01{
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            border: 1px dotted black;
+            text-align: center;
+            line-height: 150px;
+            position: absolute;
+            animation-name: myanimation01;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+        }
+        .box02{
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            /* 動畫名稱 */
+            animation-name: myanimation02;
+            /* 動畫時間 */
+            animation-duration: 1s;
+            /* 動畫轉換方法 */
+            animation-timing-function: ease-in-out;
+            /* 動畫播放方向 */
+            animation-direction: alternate;
+            /* 動畫重複次數 */
+            animation-iteration-count: infinite;
+        }
+        .box03{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px dotted black ;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            animation: myanimation03 4s ease-in-out alternate infinite;
+        }
+        .box01:hover{
+            transform: scale(1.05);
+        }
+        .box02:hover{
+            /* 動畫播放狀態 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="box01">box1</div>
+    <div class="box02">box2</div>
+    <div class="box03">box3</div>
+</body>
+</html>

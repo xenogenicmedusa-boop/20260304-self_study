@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2.CSS-顏色與背景_放射性漸層</title>
+    <style>
+        div {
+            width: 500px; height: 200px; font-size: 50pt; color: aliceblue; text-align: center; margin: 50px auto;
+        }
+        .radial1 {
+            background: radial-gradient(circle, red, yellow, green);
+        }
+        .radial2 {
+            background: radial-gradient(ellipse, red, yellow, green);
+        }
+        .radial3 {
+            background: radial-gradient(closest-side at 60% 30%, red, yellow, green);
+        }
+        .radial4 {
+            background: radial-gradient(farthest-side at 60% 50%, red, yellow, green);
+        }
+        .radial5 {
+            background: radial-gradient(closest-corner at 70% 60%, red, yellow, green);
+        }
+        .radial6 {
+            background: radial-gradient(farthest-corner at 60% 70%, red, yellow, green);
+        }
+    </style>
+</head>
+<body>
+    <div class="radial1">Circle</div>
+    <div class="radial2">Ellipse</div>
+    <div class="radial3">Closest-side</div>
+    <div class="radial4">Farthest-side</div>
+    <div class="radial5">Closest-corner</div>
+    <div class="radial6">Farthest-corner</div>
+</body>
+</html>

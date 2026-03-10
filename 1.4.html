@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.4.HTML-表格與表單</title>
+</head>
+
+<body>
+    <table border="1" width="80%" cellspacing="10" cellpadding="10">
+        <tr>
+            <th>表頭A</th>
+            <th>表頭B</th>
+            <th>表頭C</th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+    </table>
+    <table border="1" width="80%" cellspacing="10" cellpadding="10">
+        <tr>
+            <th colspan="2">A</th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" width="80" cellspacing="10" cellpadding="10">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+        </tr>
+    </table>
+    <form action="123.html" method="post">
+        <p>帳號: <input type="text" name="username"></p>
+        <p>密碼: <input type="password" name="passwd"></p>
+        <p><input type="submit" value="登入"><input type="reset" value="重置"></p>
+    </form>
+    <form action="123.html">
+        性別:
+        <input type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="female">女
+        <br>
+        興趣:
+        <input type="checkbox" name="interset" value="Jog">慢跑
+        <input type="checkbox" name="interset" value="Swim">游泳
+        <input type="checkbox" name="interset" value="Balls">球類
+        <input type="checkbox" name="interset" value="Other">其他
+    </form>
+    <form>
+        <p>
+            <label for="username">帳號:</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="passwd">密碼:</label>
+            <input type="password" name="passwd" id="passwd">
+        </p>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">男</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">女</label>
+    </form>
+    <form>
+        <select name="season" size="4" multiple>
+            <option name="spring">春天</option>
+            <option name="summer">夏天</option>
+            <option name="autumn">秋天</option>
+            <option name="winter">冬天</option>
+        </select>
+    </form>
+    <form action="">
+        <textarea name="poem" rows="5" cols="20">
+            靜夜思 李白
+
+            床前明月光，疑是地上霜。
+            舉頭望明月，低頭思故鄉。
+
+            月光鋪在床前的地上，
+            像是一層瑩白的濃霜。
+            抬頭晀望窗外的明月，
+            低頭思念久別的故鄉。
+        </textarea>
+    </form>
+    <form>
+        <fieldset>
+            <legend>登入資訊</legend>
+            <p><label for="username">帳號:</label><input type="text" name="username" id="username"></p>
+            <p><label for="passwd">密碼:</label><input type="password" name="passwd" id="passwd"></p>
+            <p><input type="submit" value="登入"><input type="reset" value="重置"></p>
+        </fieldset>
+        <fieldset>
+            <legend>登入資訊2</legend>
+            <p><label for="username">帳號:</label><input type="text" name="username" id="username"></p>
+            <p><label for="passwd">密碼:</label><input type="password" name="passwd" id="passwd"></p>
+            <p><input type="submit" value="登入"><input type="reset" value="重置"></p>
+        </fieldset>
+    </form>
+    <form action="">
+        <p>姓名: <input type="text" name="username" placeholder="請輸入姓名" required autofocus></p>
+        <p>搜尋: <input type="search" name="search"></p>
+        <p>信箱: <input type="email" name="email"></p>
+        <p>網址: <input type="url" name="url"></p>
+        <p>電話: <input type="tel" name="tel"></p>
+        <p>數字: <input type="number" name="number" min="1" max="21" step="3"></p>
+        <p>日期: <input type="date" name="date"></p>
+        <p>時間: <input type="time" name="time"></p>
+        <p>程度:   <input type="range" name="range"></p>
+        <p>顏色: <input type="color" name="color"></p>
+        <p><input type="submit" value="送出"><input type="reset" value="重置"></p>
+    </form>
+</body>
+
+</html>

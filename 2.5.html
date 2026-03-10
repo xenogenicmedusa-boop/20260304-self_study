@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.5.CSS-版面定位與排版_區塊內部陰影inset</title>
+    <style>
+        div{
+            width: 400px;
+            padding: 50px; margin: 10px auto 40px;
+            font-size: 15pt; text-align: center;
+            color: aliceblue; background-color: aqua;
+        }
+        .box1{
+            box-shadow: 10px 10px 5px 5px gray;
+        }
+        .box2{
+            box-shadow: 10px 10px 5px 5px gray inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box Shadow</div>
+    <div class="box2">Box Shadow</div>
+</body>
+</html>

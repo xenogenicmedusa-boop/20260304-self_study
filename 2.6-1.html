@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.6.CSS-選擇器應用_CSS虛擬類別選擇器</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 13pt;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: crimson;
+        }
+        a:hover{
+            border: 1px solid black;
+        }
+        a:active{
+            color: yellow;
+        }
+        table{
+            width: 300px;
+            border: 2px solid black;
+        }
+        th, td{
+            text-align: center;
+            margin: 10px;
+            padding: 2px;
+            border: 1px solid gray;
+        }
+        /* 選取第1個元素 */
+        td:nth-child(1){
+            text-align: left;
+        }
+        /* 選取第2個元素 */
+        td:nth-child(2){
+            text-align: right;
+        }
+        /* 選取奇數的元素 */
+        tr:nth-child(2n+1){
+            background-color: burlywood;
+        }
+        /* 第1個元素 */
+        tr:first-child{
+            color: aliceblue;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>網路食譜網站</h1>
+    <ul>
+        <li><a href="http://icook.tw">iCook愛料理</a></li>
+        <li><a href="http://food.tank.tw/">食譜大全</a></li>
+        <li><a href="http://cookpad.com/tw">Cookpad台灣</a></li>
+        <li><a href="http://recipe.piliapp.com">食譜幫</a></li>
+    </ul>
+    <h2>花生餅乾</h2>
+    <table>
+        <tr>
+            <th>食材</th>
+            <th>份量</th>
+        </tr>
+        <tr>
+            <td>無鹽奶油</td>
+            <td>120g</td>
+        </tr>
+        <tr>
+            <td>白細砂糖</td>
+            <td>100g</td>
+        </tr>
+        <tr>
+            <td>全蛋1顆</td>
+            <td>50g</td>
+        </tr>
+        <tr>
+            <td>低筋麵粉</td>
+            <td>250g</td>
+        </tr>
+        <tr>
+            <td>花生醬</td>
+            <td>50g</td>
+        </tr>
+        <tr>
+            <td>泡打粉</td>
+            <td>2g</td>
+        </tr>
+    </table>
+</body>
+</html>
